@@ -1538,7 +1538,8 @@ body.light-theme .theme-toggle .moon-icon {
     outline: none;
     border-color: var(--accent-primary);
     background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 0 3px rgba(91, 141, 214, 0.1);\n}
+    box-shadow: 0 0 0 3px rgba(91, 141, 214, 0.1);
+}
 
 .form-group textarea {
     resize: vertical;
