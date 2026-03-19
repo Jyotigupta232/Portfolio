@@ -274,3 +274,40 @@ section {
     justify-content: center;
   }
 }
+
+/* Light Theme */
+body.light-theme {
+  --bg-color: #f5f7fa;
+  --bg-glow-1: rgba(110, 231, 255, 0.08);
+  --bg-glow-2: rgba(124, 92, 255, 0.08);
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --accent-primary: #7c5dff;
+  --accent-secondary: #18c8ff;
+  --accent-tertiary: #fbc2ff;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-blur: blur(14px);
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+body.light-theme {
+  background: radial-gradient(circle at 15% 20%, var(--bg-glow-1), transparent 35%),
+              radial-gradient(circle at 85% 10%, var(--bg-glow-2), transparent 32%),
+              radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.05), transparent 30%),
+              var(--bg-color);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  outline: none;
+  padding: 0;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1) rotate(20deg);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.95) rotate(20deg);
+}
