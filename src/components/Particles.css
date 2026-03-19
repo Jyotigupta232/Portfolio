@@ -1,0 +1,53 @@
+.particles-container {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle at 20% 50%, rgba(139, 0, 139, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 80% 50%, rgba(25, 25, 112, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 50% 50%, rgba(0, 0, 20, 0.95) 0%, rgba(5, 5, 30, 1) 100%);
+}
+
+.particles-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.animated-particles-bg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Twinkling stars effect */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.particles-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, white, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 60% 70%, white, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 50% 50%, white, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 80% 10%, white, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90% 60%, white, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 30% 80%, white, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 10% 60%, white, rgba(0,0,0,0));
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  opacity: 0.4;
+  animation: twinkle 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+

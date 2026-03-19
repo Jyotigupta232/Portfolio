@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helium AI">
+    <meta name="subject" content="Jyoti Gupta - Portfolio">
+    <meta name="keywords" content="portfolio, data science, machine learning, blockchain, web development">
+    <meta name="description" content="Portfolio of Jyoti Gupta - Data Science Enthusiast and Computer Science Student">
+    <title>Jyoti Gupta - Data Science Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+    
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="nav-logo">JG</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <div class="nav-toggle" id="navToggle">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name">
+                        <span class="gradient-text">Jyoti Gupta</span>
+                    </h1>
+                    <h2 class="hero-role">Data Science Enthusiast</h2>
+                    <p class="hero-description">
+                        Computer Science student passionate about building intelligent systems and secure digital solutions.
+                        I enjoy working with Machine Learning, Blockchain applications, and data-driven problem solving while continuously improving my development skills.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i data-lucide="folder"></i>
+                            View Projects
+                        </a>
+                        <a href="Jyoti-Gupta-Resume.pdf" class="btn btn-secondary" download="Jyoti-Gupta-Resume.pdf">
+                            <i data-lucide="download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Jyotigupta232" class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jyotigupta243" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container glass-effect">
+                        <img src="profile-photo.jpeg" alt="Portrait of Jyoti Gupta" class="hero-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">About Me</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-card glass-effect">
+                    <div class="about-image">
+                        <div class="profile-photo">
+                            <i data-lucide="girl"></i>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I am a Computer Science undergraduate at Lovely Professional University with a strong interest in Machine Learning, Blockchain systems, and data analysis. I enjoy exploring how technology can solve real-world problems through intelligent applications and secure systems.</p>
+                        
+                        <p>I have experience working with Python, Java, and C++, along with tools such as MySQL, Git, and Jupyter Notebook. Through my projects I have applied concepts from Data Science, Blockchain architecture, and software development to build practical solutions and analyze complex datasets.</p>
+                        
+                        <p>I am always eager to learn new technologies, solve challenging problems, and collaborate on impactful projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Skills & Expertise</span>
+            </h2>
+            <div class="skills-grid">
+                <!-- Languages Card -->
+                <div class="skill-card glass-effect">
+                    <div class="skill-icon">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms Card -->
+                <div class="skill-card glass-effect">
+                    <div class="skill-icon">
+                        <i data-lucide="wrench"></i>
+                    </div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">MS Excel</span>
+                    </div>
+                </div>
+
+                <!-- Core CS Card -->
+                <div class="skill-card glass-effect">
+                    <div class="skill-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3>Core CS</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">Operating Systems</span>
+                        <span class="skill-tag">Computer Networks</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">OOP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Featured Projects</span>
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-effect">
+                    <div class="project-icon">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <h3>Smartphone Addiction Analysis</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Seaborn</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <p class="project-description">
+                        A Machine Learning project designed to analyze smartphone usage behavior and predict addiction levels. The system performs data preprocessing, feature engineering, and exploratory data analysis to identify patterns in user behavior. Multiple classification models were trained and evaluated using metrics such as accuracy and F1-score to generate meaningful insights from the dataset.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Jyotigupta232/Smartphone-Addiction-Analysis-Using-Machine-Learning" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github"></i>
+                            GitHub
+                        </a>
+                        <a href="#contact" class="project-link">
+                            <i data-lucide="external-link"></i>
+                            Demo on Request
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-effect">
+                    <div class="project-icon">
+                        <i data-lucide="vote"></i>
+                    </div>
+                    <h3>Blockchain Based Voting System</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Blockchain</span>
+                    </div>
+                    <p class="project-description">
+                        A decentralized online voting system that ensures transparency and security in digital elections. The application implements cryptographic hashing, block creation, and chain validation mechanisms to maintain an immutable ledger of votes. It also includes secure authentication, role-based access control, and real-time vote recording and result visualization.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Jyotigupta232/Voting_System_Blockchain" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://github.com/Jyotigupta232/Voting_System_Blockchain/blob/main/README.md" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="file-text"></i>
+                            Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Achievements Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Certificates & Achievements</span>
+            </h2>
+            
+            <!-- Certificates Grid -->
+            <div class="certificates-grid">
+                <div class="certificate-card glass-effect">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-badge">Verified</div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Virtual Internship in Data Science</h3>
+                        <p class="cert-issuer">
+                            <i data-lucide="building-2"></i>
+                            Skillcraft
+                        </p>
+                        <p class="cert-description">Completed comprehensive data science internship covering machine learning, data analysis, and visualization techniques.</p>
+                        <a href="Skillcraft virtual internship.png" target="_blank" class="cert-link">
+                            <i data-lucide="external-link"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card glass-effect">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-badge">Verified</div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Gen AI Academy</h3>
+                        <p class="cert-issuer">
+                            <i data-lucide="cloud"></i>
+                            Google Cloud
+                        </p>
+                        <p class="cert-description">Specialized training in Generative AI technologies and applications on Google Cloud Platform.</p>
+                        <a href="GenAI-Academy.png" target="_blank" class="cert-link">
+                            <i data-lucide="external-link"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card glass-effect">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-badge">Verified</div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Databases and SQL for Data Science</h3>
+                        <p class="cert-issuer">
+                            <i data-lucide="database"></i>
+                            IBM
+                        </p>
+                        <p class="cert-description">Mastered SQL fundamentals and database management for data science applications.</p>
+                        <a href="sql.png" target="_blank" class="cert-link">
+                            <i data-lucide="external-link"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card glass-effect">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-badge">Verified</div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Cloud Computing</h3>
+                        <p class="cert-issuer">
+                            <i data-lucide="graduation-cap"></i>
+                            NPTEL (IIT Kharagpur)
+                        </p>
+                        <p class="cert-description">Comprehensive course on cloud computing concepts, architectures, and practical implementations.</p>
+                        <a href="NPTEL certificate.png" target="_blank" class="cert-link">
+                            <i data-lucide="external-link"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Achievements Section -->
+            <h3 class="subsection-title">
+                <i data-lucide="trophy"></i>
+                Key Achievements
+            </h3>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-effect">
+                    <div class="achievement-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>250+ Problems Solved</h4>
+                        <p>Successfully solved over 250 coding problems across competitive programming platforms including LeetCode, HackerRank, and CodeChef, demonstrating strong problem-solving skills and algorithmic thinking.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card glass-effect">
+                    <div class="achievement-icon">
+                        <i data-lucide="medal"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>5th Place - CTF Hackathon</h4>
+                        <p>Secured 5th position in Capture The Flag (CTF) Hackathon, showcasing exceptional problem-solving abilities, cybersecurity knowledge, and competitive programming skills under time constraints.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Experience</span>
+            </h2>
+            <div class="experience-timeline">
+                <div class="experience-item glass-effect">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Android Developer Pro</h3>
+                            <p class="experience-company">Lovely Professional University</p>
+                        </div>
+                        <span class="experience-period">Summer Training</span>
+                    </div>
+                    <div class="experience-details">
+                        <div class="experience-skills">
+                            <span class="skill-badge">Android Development</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">Mobile Apps</span>
+                            <span class="skill-badge">Play Store</span>
+                        </div>
+                        <p class="experience-description">
+                            Completed comprehensive summer training in Android Developer Pro with A++ grade, focusing on hands-on projects and Play Store application launch. Gained practical experience in developing functional Android applications with modern development practices and real-world deployment.
+                        </p>
+                        <a href="android.png" target="_blank" class="experience-cert-link">
+                            <i data-lucide="award"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Education Timeline</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item glass-effect">
+                    <div class="timeline-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Lovely Professional University</h3>
+                        <p class="timeline-degree">B.Tech Computer Science</p>
+                        <p class="timeline-grade">CGPA: 8.27</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-effect">
+                    <div class="timeline-icon">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Vidyagyan School</h3>
+                        <p class="timeline-degree">Intermediate</p>
+                        <p class="timeline-grade">88.2%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-effect">
+                    <div class="timeline-icon">
+                        <i data-lucide="book"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Vidyagyan School</h3>
+                        <p class="timeline-degree">Matriculation</p>
+                        <p class="timeline-grade">94.6%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Get In Touch</span>
+            </h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p class="contact-text">Let's connect and collaborate on exciting projects! Feel free to reach out through any of these channels.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method glass-effect">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:jyoti26jyoti31@gmail.com">jyoti26jyoti31@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method glass-effect">
+                            <i data-lucide="github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/Jyotigupta232" target="_blank" rel="noopener noreferrer">github.com/Jyotigupta232</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method glass-effect">
+                            <i data-lucide="linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/jyotigupta243" target="_blank" rel="noopener noreferrer">linkedin.com/in/jyotigupta243</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass-effect">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i data-lucide="user"></i>
+                                Your Name
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i data-lucide="mail"></i>
+                                Your Email
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i data-lucide="tag"></i>
+                                Subject
+                            </label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Collaboration">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i data-lucide="message-square"></i>
+                                Message
+                            </label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your project or inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jyoti Gupta. Created by Helium AI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
